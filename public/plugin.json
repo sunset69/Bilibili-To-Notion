@@ -1,0 +1,22 @@
+{
+    "preload": "preload.js",
+    "logo": "logo.png",
+    "pluginSetting": {
+        "single": false
+    },
+    "features": [
+        {
+            "code": "converter",
+            "explain": "将b站视频转为可以嵌入notion的链接",
+            "icon": "logo.png",
+            "cmds": [
+                {
+                    "type": "regex",
+                    "match": "/.*(BV.*?).{10}.*/",
+                    "label": "b站视频链接转notion",
+                    "minLength": 12
+                }
+            ]
+        }
+    ]
+}

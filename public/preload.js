@@ -1,0 +1,1 @@
+window.exports={converter:{mode:"none",args:{enter:o=>{window.utools.hideMainWindow();const t=(o=>{const t=o.match(/(BV.*?).{10}/)[0],i=o.match(o.match(/p=(\d+)/)[1]);let n="player.bilibili.com/player.html?bvid="+t;return i&&(n+="&p="+i),n})(o.payload);window.utools.copyText(t),window.utools.showNotification(t+"已复制"),window.utools.outPlugin()}}}};
